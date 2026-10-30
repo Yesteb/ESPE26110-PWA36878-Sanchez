@@ -7,11 +7,12 @@ datasource db {
 }
 
 model User {
-  id       Int    @id @default(autoincrement())
+  id       Int       @id @default(autoincrement())
   name     String
-  email    String @unique
+  email    String    @unique
   password String
   role     Role
+  bookings Booking[]
 }
 
 enum Role {
@@ -19,4 +20,19 @@ enum Role {
   USER
 }
 
-// Hito 1: agrega Schedule y Booking y sus relaciones
+model Schedule {
+  id        Int       @id @default(autoincrement())
+  court     String
+  startTime DateTime
+  endTime   DateTime
+  bookings  Booking[]
+}
+
+model Booking {
+  id         Int      @id @default(autoincrement())
+  date       DateTime
+  userId     Int
+  user       User     @relation(fields: [userId], references: [id])
+  scheduleId Int
+  schedule   Schedule @relation(fields: [scheduleId], references: [id])
+}
