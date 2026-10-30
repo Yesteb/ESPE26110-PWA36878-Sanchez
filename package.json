@@ -1,0 +1,26 @@
+{
+  "name": "espe-evaluacion-p1",
+  "version": "1.0.0",
+  "description": "API de reservas de canchas · Evaluación del Parcial 1",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "Paulo Galarza",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.3.0",
+    "dotenv": "^18.0.8",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.1"
+  }
+}
