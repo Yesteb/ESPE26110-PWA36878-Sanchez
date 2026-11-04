@@ -25,7 +25,7 @@ npx prisma db seed
 npm run dev
 ```
 
-Postman: importa `postman/EVAL_P1_Sanchez.postman_collection.json` y el entorno `postman/EVAL_P1_local.postman_environment.json` (o `EVAL_P1_render` para la URL de Render) y ejecuta **Run collection** (39 peticiones, 47 pruebas). La colección se puede ejecutar varias veces: registra un usuario nuevo en cada corrida.
+Postman: importa `postman/EVAL_P1_Sanchez.postman_collection.json` y el entorno `postman/EVAL_P1_local.postman_environment.json` (o `EVAL_P1_render` para la URL de Render) y ejecuta **Run collection** (40 peticiones, 48 pruebas). La colección se puede ejecutar varias veces: registra un usuario nuevo en cada corrida.
 
 ## Datos del seed
 
